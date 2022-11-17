@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0.2">
+    <title xml:lang="ko">기본 광고 표시 스킨</title>
+    <description xml:lang="ko">광고 표시 위젯의 기본 스킨</description>
+    <version>1.0</version>
+    <date>2022-11-17</date>
+    <link>https://shop.hoto.dev/</link>
+    <author email_address="matthew218@naver.com" link="https://shop.hoto.dev/">
+        <name xml:lang="ko">Waterticket</name>
+    </author>
+</skin>

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.ads {
+    position: relative;
+    background: rgb(60, 60, 60);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ads span {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+.ads img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
