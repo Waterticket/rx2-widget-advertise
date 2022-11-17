@@ -21,7 +21,7 @@ class advertise extends WidgetHandler
 			$img_url = $advertise->small_img_url;
 		}
 
-		$click_url = getUrl('','module','advertise','act','dispAdvertiseMoveUrl','advertise_srl',$advertise->advertise_srl);
+		$click_url = getUrl('','mid','ads','act','dispAdvertiseMoveUrl','advertise_srl',$advertise->advertise_srl);
 		$title = $advertise->title;
 
 		Context::set('title', $title);
