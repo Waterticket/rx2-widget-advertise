@@ -1,11 +1,26 @@
 <load target="./css/widget.css" />
 
 <div class="ads {$size}" style="max-width:{$width}px;height:{$height}px;width:100%;">
-    <span>AD</span>
-    <a href="{$click_url}" target="_blank" title="{$title}" cond="$image_url">
-        <img src="{$image_url}" alt="{$title}" style="width:100%;height:100%;" width="{$width}" height="{$height}" />
-    </a>
+    <div class="content">
+        <!--@if($advertise_type == 'image')-->
+        <a href="{$click_url}" target="_blank" title="{$title}" cond="$image_url">
+            <img src="{$image_url}" alt="{$title}" style="width:100%;height:100%;" width="{$width}" height="{$height}" />
+        </a>
+        <!--@elseif($advertise_type == 'text')-->
+        <a href="{$click_url}" target="_blank" title="{$title}">
+            <div class="text-base" style="height:{$height}px;">
+                <div class="thumb" cond="$image_url" style="width:70px;height:70px;margin-right:20px;">
+                    <img src="{$image_url}" alt="{$title}" style="width:100%;position: relative;" />
+                </div>
+                <div class="text-section">
+                    <div class="title">{$title}</div>
+                    <div class="contents">{str_replace("\n", "<br>", $content)}</div>
+                </div>
+            </div>
+        </a>
+        <!--@endif-->
+    </div>
     <!--@if($assign_banner_visible)-->
-    <a href="{getUrl('','mid','ads','act','dispAdvertisePublishAds')}" target="_blank" class="assign_ads" title="광고등록"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 15" style="display: block; float: left; width: 15px; height: 15px;"><path style="fill:rgb(255, 255, 255);" d="M7.5,1.5a6,6,0,1,0,0,12a6,6,0,1,0,0,-12m0,1a5,5,0,1,1,0,10a5,5,0,1,1,0,-10ZM6.625,11l1.75,0l0,-4.5l-1.75,0ZM7.5,3.75a1,1,0,1,0,0,2a1,1,0,1,0,0,-2Z"></path></svg>광고등록</a>
+    <a href="{getUrl('','mid','ads','act','dispAdvertisePublishAds')}" target="_blank" class="assign_ads" title="광고등록">광고등록</a>
     <!--@endif-->
 </div>

@@ -2,13 +2,18 @@
 
 .ads {
     position: relative;
-    background: rgb(60, 60, 60);
+    background: inherit;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+.ads a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .ads span {
-    color: rgb(255, 255, 255);
+    color: inherit;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -17,13 +22,17 @@
     text-align: center;
 }
 
-.ads img {
+.ads .content {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
+    height: 100%;
     z-index: 1;
+    padding: 0 !important;
 }
+
 
 .assign_ads {
     display: inline-block;
@@ -31,11 +40,34 @@
     top: 0;
     right: 0;
     z-index: 2;
-    padding: 0 1px;
-    background: #666;
-    color: #fff;
+    padding: 0 10px;
+    background: rgb(111, 98, 168);
+    color: #fff !important;
     font-size: 11px;
     line-height: 1.4;
     height: 15px;
     text-decoration: none;
+}
+
+.text-base {
+    position: relative;
+    line-height: 1.6;
+    padding: 10px 12px !important;
+    background-color: #fff;
+}
+
+.text-base .title {
+    font-size: 16px;
+    font-weight: 700;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-base .thumb {
+    float:left;
+}
+.text-base .text-section {
+    float:left;
 }
