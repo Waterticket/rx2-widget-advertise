@@ -35,6 +35,10 @@ class advertise extends WidgetHandler
 		{
 			$img_url = $advertise->thumb_img_url;
 		}
+		else if ($advertise_type == 'raw')
+		{
+			$img_url = null;
+		}
 		else
 		{
 			return;
