@@ -22,4 +22,20 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
+}
+
+.assign_ads {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0 1px;
+    background: #666;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.4;
+    height: 15px;
+    text-decoration: none;
 }

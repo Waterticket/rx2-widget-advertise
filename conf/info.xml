@@ -18,6 +18,17 @@
 				<name xml:lang="ko">모바일용 배너</name>
 			</options>
 		</var>
+		<var id="assign_banner_visible" type="select">
+			<name xml:lang="ko">광고 등록 표시</name>
+			<options>
+				<value>Y</value>
+				<name xml:lang="ko">표시 함</name>
+			</options>
+			<options>
+				<value>N</value>
+				<name xml:lang="ko">표시 안 함</name>
+			</options>
+		</var>
 	</extra_vars>
     <author email_address="matthew218@naver.com" link="https://shop.hoto.dev/">
         <name xml:lang="ko">Waterticket</name>

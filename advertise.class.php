@@ -30,6 +30,7 @@ class advertise extends WidgetHandler
 		Context::set('height', $height);
 		Context::set('image_url', $img_url);
 		Context::set('click_url', $click_url);
+		Context::set('assign_banner_visible', $args->assign_banner_visible == 'Y');
 
 		// Compile a template
 		$oTemplate = &TemplateHandler::getInstance();
