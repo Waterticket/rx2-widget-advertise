@@ -47,6 +47,7 @@ class advertise extends WidgetHandler
 		$click_url = getUrl('','mid','ads','act','dispAdvertiseMoveUrl','advertise_srl',$advertise->advertise_srl);
 		$title = $advertise->title;
 		$content = $advertise->content;
+		$assign_banner_visible = $args->assign_banner_visible == 'Y' && $advertise->hide_new_add != 'Y';
 
 		Context::set('title', $title);
 		Context::set('content', $content);
@@ -56,7 +57,7 @@ class advertise extends WidgetHandler
 		Context::set('image_url', $img_url);
 		Context::set('click_url', $click_url);
 		Context::set('advertise_type', $advertise_type);
-		Context::set('assign_banner_visible', $args->assign_banner_visible == 'Y');
+		Context::set('assign_banner_visible', $assign_banner_visible);
 
 		// Compile a template
 		$oTemplate = &TemplateHandler::getInstance();
