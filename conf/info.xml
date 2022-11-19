@@ -17,6 +17,10 @@
 				<value>small</value>
 				<name xml:lang="ko">모바일용 배너</name>
 			</options>
+			<options>
+				<value>auto</value>
+				<name xml:lang="ko">자동 감지</name>
+			</options>
 		</var>
 		<var id="assign_banner_visible" type="select">
 			<name xml:lang="ko">광고 등록 표시</name>
@@ -27,6 +31,17 @@
 			<options>
 				<value>N</value>
 				<name xml:lang="ko">표시 안 함</name>
+			</options>
+		</var>
+		<var id="add_margin" type="select">
+			<name xml:lang="ko">margin 간격 추가</name>
+			<options>
+				<value>Y</value>
+				<name xml:lang="ko">추가 함</name>
+			</options>
+			<options>
+				<value>N</value>
+				<name xml:lang="ko">추가 안 함</name>
 			</options>
 		</var>
 	</extra_vars>

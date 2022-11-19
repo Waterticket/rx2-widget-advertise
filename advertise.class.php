@@ -9,6 +9,11 @@ class advertise extends WidgetHandler
 
 		$advertise = \Rhymix\Modules\Advertise\Models\Advertise::getOneActiveAdvertise();
 		$advertise_type = $advertise->advertise_type;
+		if ($args->size == 'auto')
+		{
+			$args->size =  Mobile::isFromMobilePhone() ? 'small' : 'big';
+		}
+
 		if ($args->size == 'big')
 		{
 			$width = 728;
@@ -58,6 +63,7 @@ class advertise extends WidgetHandler
 		Context::set('click_url', $click_url);
 		Context::set('advertise_type', $advertise_type);
 		Context::set('assign_banner_visible', $assign_banner_visible);
+		Context::set('add_margin', $args->add_margin == 'Y' ? 'margin' : '');
 
 		// Compile a template
 		$oTemplate = &TemplateHandler::getInstance();

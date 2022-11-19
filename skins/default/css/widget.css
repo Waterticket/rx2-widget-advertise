@@ -3,8 +3,13 @@
 .ads {
     position: relative;
     background: inherit;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ads.margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .ads a {
@@ -53,13 +58,14 @@
     position: relative;
     line-height: 1.6;
     padding: 10px 12px !important;
+    width: 90%;
     background-color: #fff;
 }
 
 .text-base .title {
     font-size: 16px;
     font-weight: 700;
-    width: 80%;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -70,4 +76,9 @@
 }
 .text-base .text-section {
     float:left;
+    width: 60%;
+}
+.text-base .contents {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

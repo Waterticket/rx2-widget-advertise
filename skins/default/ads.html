@@ -1,6 +1,6 @@
 <load target="./css/widget.css" />
 
-<div class="ads {$size}" style="max-width:{$width}px;height:{$height}px;width:100%;">
+<div class="ads {$size} {$add_margin}" style="max-width:{$width}px;height:{$height}px;width:100%;">
     <div class="content">
         <!--@if($advertise_type == 'image')-->
         <a href="{$click_url}" target="_blank" title="{$title}" cond="$image_url">
@@ -14,7 +14,7 @@
                 </div>
                 <div class="text-section">
                     <div class="title">{$title}</div>
-                    <div class="contents">{str_replace("\n", "<br>", $content)}</div>
+                    <div class="contents" style="max-height:{$height-40}px;">{str_replace("\n", "<br>", $content)}</div>
                 </div>
             </div>
         </a>
