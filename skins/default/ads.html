@@ -3,11 +3,11 @@
 <div class="ads {$size} {$add_margin}" style="max-width:{$width}px;height:{$height}px;width:100%;">
     <div class="content">
         <!--@if($advertise_type == 'image')-->
-        <a href="{$click_url}" target="_blank" title="{$title}" cond="$image_url">
+        <a href="{$click_url}" target="_blank" title="{$title}" rel="nofollow noopener noreferrer" cond="$image_url">
             <img src="{$image_url}" alt="{$title}" style="width:100%;height:100%;" width="{$width}" height="{$height}" />
         </a>
         <!--@elseif($advertise_type == 'text')-->
-        <a href="{$click_url}" target="_blank" title="{$title}">
+        <a href="{$click_url}" target="_blank" title="{$title}" rel="nofollow noopener noreferrer">
             <div class="text-base" style="height:{$height}px;">
                 <div class="thumb" cond="$image_url" style="width:70px;height:70px;margin-right:20px;">
                     <img src="{$image_url}" alt="{$title}" style="width:100%;height:100%;position: relative;" />
