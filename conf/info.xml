@@ -44,6 +44,26 @@
 				<name xml:lang="ko">추가 안 함</name>
 			</options>
 		</var>
+		<var id="button_color" type="color">
+			<name xml:lang="ko">광고등록 버튼 색상 (기본 #6f62a8)</name>
+			<description xml:lang="ko">광고 등록 버튼의 색상을 변경합니다.</description>
+		</var>
+		<var id="button_text_color" type="color">
+			<name xml:lang="ko">광고등록 버튼 글자 색상 (기본 #ffffff)</name>
+			<description xml:lang="ko">광고 등록 버튼의 글자 색상을 변경합니다.</description>
+		</var>
+		<var id="button_text" type="text">
+			<name xml:lang="ko">광고등록 버튼 글자 내용 (기본 "광고등록")</name>
+			<description xml:lang="ko">광고 등록 버튼의 글자 내용을 변경합니다.</description>
+		</var>
+		<var id="button_width_padding" type="text">
+			<name xml:lang="ko">광고등록 버튼 가로 padding (기본 10px)</name>
+			<description xml:lang="ko">광고등록 버튼 가로 padding입니다. 단위까지 입력하여주세요.</description>
+		</var>
+		<var id="button_height_padding" type="text">
+			<name xml:lang="ko">광고등록 버튼 세로 padding (기본 2px)</name>
+			<description xml:lang="ko">광고등록 버튼 세로 padding입니다. 단위까지 입력하여주세요.</description>
+		</var>
 	</extra_vars>
     <author email_address="matthew218@naver.com" link="https://shop.hoto.dev/">
         <name xml:lang="ko">Waterticket</name>

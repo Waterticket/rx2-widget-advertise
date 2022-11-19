@@ -54,6 +54,17 @@ class advertise extends WidgetHandler
 		$content = $advertise->content;
 		$assign_banner_visible = $args->assign_banner_visible == 'Y' && $advertise->hide_new_add != 'Y';
 
+		$button_color = $args->button_color ?: '#6f62a8';
+		$button_text_color = $args->button_text_color ?: '#ffffff';
+		$button_text = $args->button_text ?: '광고등록';
+		$button_width_padding = $args->button_width_padding ?: '10px';
+		$button_height_padding = $args->button_height_padding ?: '2px';
+		Context::set('button_color', $button_color);
+		Context::set('button_text_color', $button_text_color);
+		Context::set('button_text', $button_text);
+		Context::set('button_width_padding', $button_width_padding);
+		Context::set('button_height_padding', $button_height_padding);
+
 		Context::set('title', $title);
 		Context::set('content', $content);
 		Context::set('size', $args->size);
