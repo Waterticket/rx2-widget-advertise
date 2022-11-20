@@ -75,6 +75,13 @@ class advertise extends WidgetHandler
 		Context::set('advertise_type', $advertise_type);
 		Context::set('assign_banner_visible', $assign_banner_visible);
 		Context::set('add_margin', $args->add_margin == 'Y' ? 'margin' : '');
+		Context::set('advertise_srl', $advertise->advertise_srl);
+
+		$logged_info = Context::get('logged_info');
+		if ($logged_info->is_admin === 'Y')
+		{
+			Context::set('is_admin', true);
+		}
 
 		// Compile a template
 		$oTemplate = &TemplateHandler::getInstance();

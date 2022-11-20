@@ -25,4 +25,8 @@
     <!--@if($assign_banner_visible)-->
     <a href="{getUrl('','mid','ads','act','dispAdvertisePublishAds')}" target="_blank" class="assign_ads" style="background:{$button_color};color:{$button_text_color};padding:{$button_height_padding} {$button_width_padding};" title="{$button_text}">{$button_text}</a>
     <!--@endif-->
+
+    <!--@if($is_admin && $advertise_srl != 1)-->
+    <a href="{getUrl('','mid','ads','act','dispAdvertiseSpecific','advertise_srl',$advertise_srl)}" target="_blank" class="assign_ads" style="top:auto;bottom:0;background:#3f3f3f" title="광고 정보 (관리자용)">광고 정보 (관리자용)</a>
+    <!--@endif-->
 </div>
