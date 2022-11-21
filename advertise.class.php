@@ -4,6 +4,8 @@ class advertise extends WidgetHandler
 {
 	function proc($args)
 	{
+		if ($arg->skin == '/USE_DEFAULT/') $arg->skin = 'default';
+
 		$tpl_path = sprintf('%sskins/%s', $this->widget_path, $args->skin);
 		$tpl_file = 'ads';
 
