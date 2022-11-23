@@ -44,6 +44,28 @@
 				<name xml:lang="ko">추가 안 함</name>
 			</options>
 		</var>
+		<var id="width_full" type="select">
+			<name xml:lang="ko">광고 가로 꽉 채우기</name>
+			<options>
+				<value>Y</value>
+				<name xml:lang="ko">사용 함</name>
+			</options>
+			<options>
+				<value>N</value>
+				<name xml:lang="ko">사용 안 함</name>
+			</options>
+		</var>
+		<var id="auto_resize" type="select">
+			<name xml:lang="ko">광고 크기 자동 리사이즈</name>
+			<options>
+				<value>N</value>
+				<name xml:lang="ko">사용 안 함</name>
+			</options>
+			<options>
+				<value>Y</value>
+				<name xml:lang="ko">사용 함</name>
+			</options>
+		</var>
 		<var id="button_color" type="color">
 			<name xml:lang="ko">광고등록 버튼 색상 (기본 #6f62a8)</name>
 			<description xml:lang="ko">광고 등록 버튼의 색상을 변경합니다.</description>

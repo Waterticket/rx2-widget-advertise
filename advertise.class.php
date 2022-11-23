@@ -78,6 +78,8 @@ class advertise extends WidgetHandler
 		Context::set('assign_banner_visible', $assign_banner_visible);
 		Context::set('add_margin', $args->add_margin == 'Y' ? 'margin' : '');
 		Context::set('advertise_srl', $advertise->advertise_srl);
+		Context::set('auto_resize', $args->auto_resize == 'Y' ? 'auto_resize' : '');
+		Context::set('width_full', $args->width_full == 'Y' ? 'width_full' : '');
 
 		$logged_info = Context::get('logged_info');
 		if ($logged_info->is_admin === 'Y')

@@ -7,6 +7,29 @@
     margin-bottom: 0;
 }
 
+.ads.width_full {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.ads.auto_resize.image {
+    width: 100%;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.ads.auto_resize.image.big:after{
+    content: "";
+    display: block;
+    padding-bottom: 12.36%;
+}
+
+.ads.auto_resize.image.small:after{
+    content: "";
+    display: block;
+    padding-bottom: 31.25%;
+}
+
 .ads.margin {
     margin-top: 10px;
     margin-bottom: 10px;
