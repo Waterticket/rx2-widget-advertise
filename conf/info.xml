@@ -4,8 +4,8 @@
     <description xml:lang="ko">
         광고집행 모듈과 함께 사용되며, 위젯을 사용하여 원하는 위치에 광고를 표시합니다.
     </description>
-    <version>1.0.0</version>
-    <date>2022-11-17</date>
+    <version>1.1.0</version>
+    <date>2022-11-23</date>
 	<extra_vars>
 		<var id="size" type="select">
 			<name xml:lang="ko">광고 크기를 결정합니다</name>
