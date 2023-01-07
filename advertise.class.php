@@ -45,6 +45,7 @@ class advertise extends WidgetHandler
 		else if ($advertise_type == 'raw')
 		{
 			$img_url = null;
+			$height = -1;
 		}
 		else
 		{
